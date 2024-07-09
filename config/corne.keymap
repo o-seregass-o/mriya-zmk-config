@@ -5,22 +5,18 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE   0
 #define LOWER  1
 #define RAISE  2
 #define ADJUST 3
 
-&lt {
-    quick_tap_ms = <220>;
-};
+&lt { quick_tap_ms = <220>; };
 
-&mt {
-    quick_tap_ms = <220>;
-};
+&mt { quick_tap_ms = <220>; };
+
 / {
     macros {
         numdot: numdot {
@@ -37,6 +33,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
         grtsgn: grtsgn {
             label = "ZM_grtsgn";
             compatible = "zmk,behavior-macro";
@@ -51,7 +48,8 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-          cprght: cprght {
+
+        cprght: cprght {
             label = "ZM_cprght";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -65,6 +63,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
         degree: degree {
             label = "ZM_degree";
             compatible = "zmk,behavior-macro";
@@ -79,6 +78,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+
         quote: quote {
             label = "ZM_quote";
             compatible = "zmk,behavior-macro";
@@ -93,7 +93,8 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-	euro: euro {
+
+        euro: euro {
             label = "ZM_euro";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -106,8 +107,9 @@
                 <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	numcomma: numcomma {
+        };
+
+        numcomma: numcomma {
             label = "ZM_numcomma";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -120,8 +122,9 @@
                 <&kp KP_N4 &kp KP_N4>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	lguillement: lguillement {
+        };
+
+        lguillement: lguillement {
             label = "ZM_lguillement";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -134,8 +137,9 @@
                 <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N1>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	rguillement: rguillement {
+        };
+
+        rguillement: rguillement {
             label = "ZM_rguillement";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -148,8 +152,9 @@
                 <&kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	lbracket: lbracket {
+        };
+
+        lbracket: lbracket {
             label = "ZM_lbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -162,8 +167,9 @@
                 <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	rbracket: rbracket {
+        };
+
+        rbracket: rbracket {
             label = "ZM_rbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -176,8 +182,9 @@
                 <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	colon: colon {
+        };
+
+        colon: colon {
             label = "ZM_colon";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -190,8 +197,9 @@
                 <&kp KP_N5 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	semicolon: semicolon {
+        };
+
+        semicolon: semicolon {
             label = "ZM_semicolon";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -204,8 +212,9 @@
                 <&kp KP_N5 &kp KP_N9>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-	question: question {
+        };
+
+        question: question {
             label = "ZM_question";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -218,8 +227,9 @@
                 <&kp KP_N6 &kp KP_N3>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-         lsqbracket: lsqbracket {
+        };
+
+        lsqbracket: lsqbracket {
             label = "ZM_lsqbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -232,8 +242,9 @@
                 <&kp KP_N9 &kp KP_N1>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
-         rsqbracket: rsqbracket {
+        };
+
+        rsqbracket: rsqbracket {
             label = "ZM_rsqbracket";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -246,88 +257,101 @@
                 <&kp KP_N9 &kp KP_N3>,
                 <&macro_release>,
                 <&kp LALT>;
-	    };
+        };
     };
 };
 
 / {
     combos {
-            compatible = "zmk,combos";
-            combo_grave {
-                timeout-ms = <50>;
-                key-positions = <4 5>;
-                bindings = <&kp GRAVE>;
+        compatible = "zmk,combos";
+
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&kp GRAVE>;
         };
-            combo_esc_right {
-                timeout-ms = <50>;
-                key-positions = <19 31>;
-                bindings = <&kp ESC>;
+
+        combo_esc_right {
+            timeout-ms = <50>;
+            key-positions = <19 31>;
+            bindings = <&kp ESC>;
         };
-            combo_comma {
-                timeout-ms = <50>;
-                key-positions = <15 16>;
-                bindings = <&numcomma>;
+
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&numcomma>;
         };
-            combo_dot {
-                timeout-ms = <50>;
-                key-positions = <19 20>;
-                bindings = <&numdot>;
+
+        combo_dot {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&numdot>;
         };
-            combo_esc_left {
-                timeout-ms = <50>;
-                key-positions = <16 28>;
-                bindings = <&kp ESC>;
+
+        combo_esc_left {
+            timeout-ms = <50>;
+            key-positions = <16 28>;
+            bindings = <&kp ESC>;
         };
-            combo_del {
-                timeout-ms = <50>;
-                key-positions = <16 17>;
-                bindings = <&kp DEL>;
+
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp DEL>;
         };
-            combo_lsqbracket {
-                timeout-ms = <50>;
-                key-positions = <20 21>;
-                bindings = <&lsqbracket>;
+
+        combo_lsqbracket {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&lsqbracket>;
         };
-            combo_rsqbracket {
-                timeout-ms = <50>;
-                key-positions = <32 33>;
-                bindings = <&rsqbracket>;
+
+        combo_rsqbracket {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&rsqbracket>;
         };
-            combo_numcomma {
-                timeout-ms = <50>;
-                key-positions = <31 32>;
-                bindings = <&numcomma>;
+
+        combo_numcomma {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&numcomma>;
         };
-            combo_copy {
-                timeout-ms = <50>;
-                key-positions = <27 28>;
-                bindings = <&kp LC(C)>;
-        }; 
-            combo_cut {
-                timeout-ms = <50>;
-                key-positions = <3 4>;
-                bindings = <&kp LC(X)>;
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LC(C)>;
         };
-            combo_paste {
-                timeout-ms = <50>;
-                key-positions = <14 15>;
-                bindings = <&kp LC(V)>;
-        };     
+
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp LC(X)>;
+        };
+
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&kp LC(V)>;
+        };
     };
 };
 
 / {
     keymap {
         compatible = "zmk,keymap";
-		
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-	
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
         base_layer {
-// ┌────────────────────────────────────────────┐
-label= "BASE"                                   ;
-// └────────────────────────────────────────────┘
-/*
+            // ┌────────────────────────────────────────────┐
+
+            label = "BASE";
+
+            // └────────────────────────────────────────────┘
+            /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
 │ LGUI/]│   Q   │   W   │   E   │   R   │   T   │                   │   Y   │   U   │   I   │   O   │   P   │RGUI/[ │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
@@ -338,23 +362,24 @@ label= "BASE"                                   ;
                                 │ RAISE │ SPACE │ LOWER │   │ LOWER │  BKSP │ RAISE │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘   
 */
-bindings = <
-	
-&mt LGUI RBKT 	 &kp Q   &kp W        &kp E   	  &kp R       	    &kp T       &kp Y  	    &kp U            &kp I       &kp O     &kp P      &mt RGUI LBKT     
-&mt LCTRL GRAVE  &kp A   &kp S        &kp D   	  &kp F       	    &kp G       &kp H       &kp J            &kp K       &kp L     &kp SEMI   &mt RCTRL SQT
-&mt LALT BSLH    &kp Z   &kp X        &kp C   	  &kp V       	    &kp B       &kp N       &kp M            &kp COMMA   &kp DOT   &kp FSLH   &mt RALT MINUS
-				      &lt 2 TAB   &mt LSHFT SPACE   &lt 1 RET   &lt 1 RET   &mt RSHFT BSPC   &lt 2 DEL   
+
+            bindings = <
+&mt LGUI RBKT    &kp Q  &kp W  &kp E      &kp R            &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &mt RGUI LBKT
+&mt LCTRL GRAVE  &kp A  &kp S  &kp D      &kp F            &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LALT BSLH    &kp Z  &kp X  &kp C      &kp V            &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &mt RALT MINUS
+                               &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 RET  &mt RSHFT BSPC  &lt 2 DEL
             >;
         };
-		
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         lower_layer {
-// ┌────────────────────────────────────────────┐
-label= "LOWER"                                  ;
-// └────────────────────────────────────────────┘
-/*
+            // ┌────────────────────────────────────────────┐
+
+            label = "LOWER";
+
+            // └────────────────────────────────────────────┘
+            /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
 │ CAPS  │  F10  │  F9   │  F8   │  F7   │   ~   │                   │   !   │   @   │   #   │   $   │   %   │ RGUI  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
@@ -365,22 +390,24 @@ label= "LOWER"                                  ;
                                 │  ADJ  │ LSHFT │   ▼   │   │   ▼   │ RSHFT │  ADJ  │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘   
 */
-bindings = <
 
-&kp CAPS    &kp F10   &kp F9    &kp F8  	&kp F7    	     &kp GRAVE       &kp EXCL   &kp AT           &kp HASH       &kp DOLLAR   &kp PERCENT   &kp RGUI
-&kp LCTRL   &kp F11   &kp F3    &kp F2      &kp F1    	     &kp K_CMENU     &colon     &question        &kp STAR       &kp LPAR     &kp RPAR      &kp AMPS
-&kp LALT    &kp F12   &kp F6    &kp F5      &kp F4   	     &kp LG(SPACE)   &quote     &lguillement     &rguillement   &lbracket    &rbracket     &kp CARET
-			       &lt 3 TAB   &mt LSHFT SPACE   &trans   	     &trans     &mt RSHFT BSPC   &lt 3 DEL
+            bindings = <
+&kp CAPS   &kp F10  &kp F9  &kp F8     &kp F7           &kp GRAVE        &kp EXCL  &kp AT          &kp HASH      &kp DOLLAR  &kp PERCENT  &kp RGUI
+&kp LCTRL  &kp F11  &kp F3  &kp F2     &kp F1           &kp K_CMENU      &colon    &question       &kp STAR      &kp LPAR    &kp RPAR     &kp AMPS
+&kp LALT   &kp F12  &kp F6  &kp F5     &kp F4           &kp LG(SPACE)    &quote    &lguillement    &rguillement  &lbracket   &rbracket    &kp CARET
+                            &lt 3 TAB  &mt LSHFT SPACE  &trans           &trans    &mt RSHFT BSPC  &lt 3 DEL
             >;
         };
-		
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
 
         raise_layer {
-// ┌────────────────────────────────────────────┐
-label= "RAISE"                                  ;
-// └────────────────────────────────────────────┘
-/*
+            // ┌────────────────────────────────────────────┐
+
+            label = "RAISE";
+
+            // └────────────────────────────────────────────┘
+            /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
 │ BKSP  │   *   │   9   │   8   │   7   │   +   │                   │ NEXT  │ HOME  │ PSCRN │ PGUP  │ VOLU  │ RGUI  │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
@@ -391,23 +418,24 @@ label= "RAISE"                                  ;
                                 │   ▲   │ LSHFT │  ADJ  │   │  ADJ  │ RSHFT │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘  
 */
-bindings = <
 
-&kp BSPC             &kp KP_MULTIPLY   &kp KP_N9   &kp KP_N8   &kp KP_N7         &kp PLUS    &kp C_NEXT   &kp HOME         &kp PSCRN   &kp PG_UP   &kp C_VOL_UP   &kp RGUI
-&mt LCTRL KP_ENTER   &kp KP_SLASH      &kp KP_N3   &kp KP_N2   &kp KP_N1         &kp KP_N0   &kp C_PLAY   &kp LEFT         &kp UP      &kp RIGHT   &kp C_VOL_DN   &kp RCTRL 
-&mt LALT EQUAL       &numdot 	       &kp KP_N6   &kp KP_N5   &kp KP_N4         &kp MINUS   &kp C_PREV   &kp END          &kp DOWN    &kp PG_DN   &kp C_MUTE     &kp RALT
-				                       &trans      &mt LSHFT SPACE   &lt 3 ESC   &lt 3 RET    &mt RSHFT BSPC   &trans
+            bindings = <
+&kp BSPC            &kp KP_MULTIPLY  &kp KP_N9  &kp KP_N8  &kp KP_N7        &kp PLUS     &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_VOL_UP  &kp RGUI
+&mt LCTRL KP_ENTER  &kp KP_SLASH     &kp KP_N3  &kp KP_N2  &kp KP_N1        &kp KP_N0    &kp C_PLAY  &kp LEFT        &kp UP     &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
+&mt LALT EQUAL      &numdot          &kp KP_N6  &kp KP_N5  &kp KP_N4        &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN  &kp C_MUTE    &kp RALT
+                                                &trans     &mt LSHFT SPACE  &lt 3 ESC    &lt 3 RET   &mt RSHFT BSPC  &trans
             >;
         };
 
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         adjust_layer {
-// ┌────────────────────────────────────────────┐
-label= "ADJUST"                                 ;
-// └────────────────────────────────────────────┘
-/*
+            // ┌────────────────────────────────────────────┐
+
+            label = "ADJUST";
+
+            // └────────────────────────────────────────────┘
+            /*
 ┌───────┬───────┬───────┬───────┬───────┬───────┐                   ┌───────┬───────┬───────┬───────┬───────┬───────┐
 │ BLDR  │       │       │       │       │BT NEXT│                   │BT NEXT│   ₽   │   €   │       │       │  BLDR │
 ├───────┼───────┼───────┼───────┼───────┼───────┤                   ├───────┼───────┼───────┼───────┼───────┼───────┤                      
@@ -418,12 +446,12 @@ label= "ADJUST"                                 ;
                                 │   ▲   │ POWER │   ▼   │   │   ▼   │ POWER │   ▲   │
                                 └───────┴───────┴───────┘   └───────┴───────┴───────┘
 */
-bindings = <
 
-&bootloader   &none          &none          &none          &bt BT_PRV        &bt BT_NXT     &bt BT_NXT    &kp RA(N8)        &euro          &cprght        &degree        &bootloader
-&bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3      &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
-&kp CAPS      &kp KP_NUM     &kp INS        &kp SLCK       &kp PAUSE_BREAK   &bt BT_PRV     &bt BT_PRV    &kp PAUSE_BREAK   &kp SLCK       &kp INS        &kp KP_NUM     &kp CAPS
-					    &trans         &soft_off        &trans         &trans        &soft_off        &trans
+            bindings = <
+&bootloader  &none         &none         &none         &bt BT_PRV       &bt BT_NXT      &bt BT_NXT    &kp RA(N8)       &euro         &cprght       &degree       &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&kp CAPS     &kp KP_NUM    &kp INS       &kp SLCK      &kp PAUSE_BREAK  &bt BT_PRV      &bt BT_PRV    &kp PAUSE_BREAK  &kp SLCK      &kp INS       &kp KP_NUM    &kp CAPS
+                                         &trans        &soft_off        &trans          &trans        &mo 3            &trans
             >;
         };
     };
