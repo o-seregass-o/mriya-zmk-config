@@ -2,9 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: Merlinov
+      url-base: https://github.com/Merlinov
+  
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: Merlinov
       revision: main
       import: app/west.yml
   self:
