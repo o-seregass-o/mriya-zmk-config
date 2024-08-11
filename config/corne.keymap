@@ -4,12 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors/mouse_keys.dtsi>
+#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
-#include "mouse.dtsi"
 
 #define BASE   0
 #define LOWER  1
@@ -367,10 +366,10 @@
 */
 
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp E      &kp R            &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &mt RGUI LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D      &kp F            &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT BSLH    &kp Z  &kp X  &kp C      &kp V            &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &mt RALT MINUS
-                               &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 RET  &mt RSHFT BSPC  &lt 2 DEL
+&mt LS(LGUI) RBKT  &kp Q  &kp W  &kp E      &kp R            &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &mt RGUI LBKT
+&mt LCTRL GRAVE    &kp A  &kp S  &kp D      &kp F            &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&mt LALT BSLH      &kp Z  &kp X  &kp C      &kp V            &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &mt RALT MINUS
+                                 &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 RET  &mt RSHFT BSPC  &lt 2 DEL
             >;
         };
 
@@ -451,7 +450,7 @@
 */
 
             bindings = <
-&bootloader  &none         &mmv MOVE_UP         &none         &bt BT_PRV       &bt BT_NXT      &bt BT_NXT    &kp RA(N8)       &euro         &cprght       &degree       &bootloader
+&bootloader  &none         &mmv MOVE_UP  &none         &bt BT_PRV       &bt BT_NXT      &bt BT_NXT    &kp RA(N8)       &euro         &cprght       &degree       &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &kp CAPS     &kp KP_NUM    &kp INS       &kp SLCK      &kp PAUSE_BREAK  &bt BT_PRV      &bt BT_PRV    &kp PAUSE_BREAK  &kp SLCK      &kp INS       &kp KP_NUM    &kp CAPS
                                          &trans        &soft_off        &trans          &trans        &mo 3            &trans
