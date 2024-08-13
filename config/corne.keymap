@@ -394,9 +394,9 @@
 */
 
             bindings = <
-&kp CAPS   &bootloader     &kp UP_ARROW    &bootloader      &bootloader      &kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERCENT  &kp RGUI
-&kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader      &kp K_CMENU      &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RPAR     &kp AMPS
-&kp LCTRL  &bootloader     &bootloader     &bootloader      &bootloader      &kp LG(SPACE)    &kp DOT          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp FSLH     &kp CARET
+&kp CAPS   &bootloader     &kp UP_ARROW    &bootloader      &bootloader      &kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp MINUS  &kp RGUI
+&kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader      &kp K_CMENU      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &bootloader      &kp PLUS   &kp AMPS
+&kp LCTRL  &bootloader     &bootloader     &bootloader      &bootloader      &kp LG(SPACE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &bootloader      &kp FSLH   &kp CARET
                                            &lt 3 TAB        &mt LSHFT SPACE  &trans           &trans           &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
