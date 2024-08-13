@@ -394,9 +394,9 @@
 */
 
             bindings = <
-&kp CAPS   &kp F10  &kp F9  &kp F8     &kp F7           &kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_0  &kp SLASH  &kp PERCENT  &kp RGUI
-&kp LCTRL  &kp F11  &kp F3  &kp F2     &kp F1           &kp K_CMENU      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp RPAR     &kp AMPS
-&kp LALT   &kp F12  &kp F6  &kp F5     &kp F4           &kp LG(SPACE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS   &rbracket    &kp CARET
+&kp CAPS   &kp F10  &kp F9  &kp F8     &kp F7           &kp GRAVE        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp PERCENT  &kp RGUI
+&kp LCTRL  &kp F11  &kp F3  &kp F2     &kp F1           &kp K_CMENU      &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RPAR     &kp AMPS
+&kp LALT   &kp F12  &kp F6  &kp F5     &kp F4           &kp LG(SPACE)    &kp DOT          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp FSLH     &kp CARET
                             &lt 3 TAB  &mt LSHFT SPACE  &trans           &trans           &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
