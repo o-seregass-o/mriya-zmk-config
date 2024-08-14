@@ -394,9 +394,9 @@
 */
 
             bindings = <
-&kp ESC    &bootloader     &kp UP_ARROW    &bootloader      &bootloader  &kp CAPSLOCK     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0        &kp MINUS  &kp PRINTSCREEN
-&kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp K_CMENU      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS   &kp PLUS   &kp EQUAL
-&kp LCTRL  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp UNDERSCORE
+&kp ESC    &bootloader     &kp UP_ARROW    &bootloader      &bootloader  &kp CAPSLOCK     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0        &kp MINUS  &kp LEFT_PARENTHESIS
+&kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp K_CMENU      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS   &kp PLUS   &kp PRINTSCREEN
+&kp LCTRL  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_PARENTHESIS  &kp FSLH   &kp RPAR
                                            &lt 3 LSHFT      &kp ENTER    &trans           &trans           &mt RSHFT BSPC   &lt 3 DEL
             >;
         };
