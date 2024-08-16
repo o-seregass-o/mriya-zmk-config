@@ -394,10 +394,10 @@
 */
 
             bindings = <
-&kp ESC    &bootloader     &kp UP_ARROW    &bootloader      &kp EQUAL    &kp CAPSLOCK     &kp N7        &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &kp LEFT_PARENTHESIS
-&kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp TAB          &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp EXCL      &kp PLUS   &kp UNDERSCORE
-&kp LSHFT  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp QMARK     &kp FSLH   &kp RPAR
-                                           &lt 3 LSHFT      &kp LCTRL    &kp ENTER        &trans        &kp BACKSPACE  &lt 3 DEL
+&kp ESC          &bootloader     &kp UP_ARROW    &bootloader      &kp EQUAL    &kp CAPSLOCK     &kp N7        &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &kp LEFT_PARENTHESIS
+&kp LALT         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp TAB          &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp EXCL      &kp PLUS   &kp UNDERSCORE
+&mt LSHFT SPACE  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp QMARK     &kp FSLH   &kp RPAR
+                                                 &lt 3 LSHFT      &kp LCTRL    &kp ENTER        &trans        &kp BACKSPACE  &lt 3 DEL
             >;
         };
 
@@ -422,10 +422,10 @@
 */
 
             bindings = <
-&kp BSPC            &kp F1   &kp F2   &kp F3     &kp F4           &kp F5       &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_VOL_UP  &kp RGUI
-&mt LCTRL KP_ENTER  &kp F6   &kp F7   &kp F8     &kp F9           &kp F10      &kp C_PLAY  &kp LEFT        &kp UP     &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
-&mt LALT EQUAL      &kp F11  &kp F12  &kp KP_N5  &kp KP_N4        &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN  &kp C_MUTE    &kp RALT
-                                      &trans     &mt LSHFT SPACE  &lt 3 ESC    &lt 3 RET   &mt RSHFT BSPC  &trans
+&kp BSPC            &kp F1   &kp F2   &kp F3     &kp F4     &kp F5       &kp C_NEXT  &kp HOME        &kp PSCRN  &kp PG_UP  &kp C_VOL_UP  &kp RGUI
+&mt LCTRL KP_ENTER  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10      &kp C_PLAY  &kp LEFT        &kp UP     &kp RIGHT  &kp C_VOL_DN  &kp RCTRL
+&mt LSHFT SPACE     &kp F11  &kp F12  &kp KP_N5  &kp KP_N4  &kp MINUS    &kp C_PREV  &kp END         &kp DOWN   &kp PG_DN  &kp C_MUTE    &kp RALT
+                                      &trans     &kp LCTRL  &lt 3 ESC    &lt 3 RET   &mt RSHFT BSPC  &trans
             >;
         };
 
