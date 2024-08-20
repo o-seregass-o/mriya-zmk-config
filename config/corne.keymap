@@ -366,10 +366,10 @@
 */
 
             bindings = <
-&kp ESC          &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &mt RGUI LBKT
-&kp LEFT_ALT     &kp A  &kp S  &kp D      &kp F      &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt PRINTSCREEN SQT
-&mt LSHFT SPACE  &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_CONTROL RIGHT_BRACKET
-                               &lt 2 DEL  &kp LCTRL  &lt 1 RET    &lt 1 RET  &kp BACKSPACE  &lt 2 DEL
+&kp ESC       &kp Q  &kp W  &kp E      &kp R                &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &mt RGUI LBKT
+&kp LEFT_ALT  &kp A  &kp S  &kp D      &kp F                &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &mt PRINTSCREEN SQT
+&kp LCTRL     &kp Z  &kp X  &kp C      &kp V                &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_CONTROL RIGHT_BRACKET
+                            &lt 2 DEL  &mt LSHFT BACKSPACE  &lt 1 RET    &lt 1 RET  &kp BACKSPACE  &lt 2 DEL
             >;
         };
 
@@ -394,9 +394,9 @@
 */
 
             bindings = <
-&kp ESC          &bootloader     &kp UP_ARROW    &bootloader      &kp EQUAL    &kp CAPSLOCK     &kp N7        &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &kp LEFT_PARENTHESIS
-&kp LALT         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp TAB          &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp EXCL      &kp PLUS   &kp UNDERSCORE
-&mt LSHFT SPACE  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp QMARK     &kp FSLH   &kp RPAR
+&kp ESC          &bootloader     &kp UP_ARROW    &bootloader      &kp EQUAL    &kp CAPSLOCK     &kp N7        &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS      &kp LEFT_PARENTHESIS
+&kp LALT         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader  &kp TAB          &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp EXCL      &kp PLUS       &kp UNDERSCORE
+&mt LSHFT SPACE  &bootloader     &bootloader     &bootloader      &bootloader  &kp LG(SPACE)    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp QMARK     &kp KP_DIVIDE  &kp RPAR
                                                  &lt 3 LSHFT      &kp LCTRL    &kp ENTER        &trans        &kp BACKSPACE  &lt 3 DEL
             >;
         };
