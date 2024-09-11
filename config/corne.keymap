@@ -397,7 +397,7 @@
 &kp ESC    &bootloader     &kp UP_ARROW    &bootloader      &kp EQUAL        &kp CAPSLOCK     &kp N7        &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS      &kp LEFT_PARENTHESIS
 &kp LALT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bootloader      &kp TAB          &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp EXCL      &kp PLUS       &kp UNDERSCORE
 &kp LCTRL  &bootloader     &bootloader     &bootloader      &bootloader      &kp LG(SPACE)    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp QMARK     &kp KP_DIVIDE  &kp RPAR
-                                           &lt 3 LSHFT      &mt LSHFT SPACE  &kp ENTER        &trans        &kp BACKSPACE  &lt 3 DEL
+                                           &lt 3 LSHFT      &mt LSHFT SPACE  &kp ENTER        &kp ENTER     &kp BACKSPACE  &lt 3 DEL
             >;
         };
 
